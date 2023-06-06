@@ -9,19 +9,23 @@
 </head>
 <body>
   <main>
-    
-    <h1>Awesome Books</h1>
+    <div class="container">
 
-    <div>
-      <ul id="bookList"></ul>
-    </div>
+      <h1 class="title">All awesome books</h1>
 
-    <div>
-      <h2>Add a Book</h2>
-      <input type="text" id="titleInput" placeholder="Title">
-      <input type="text" id="authorInput" placeholder="Author">
-      <button onclick="addBook()">Add</button>
+      <div>
+        <ul id="bookList" class="book-list"></ul>
+      </div>
+  
+      <div class="form">
+        <h2>Add a new book</h2>
+        <input type="text" id="titleInput" placeholder="Title">
+        <input type="text" id="authorInput" placeholder="Author">
+        <button onclick="bookCollection.addBook()">Add</button>
+      </div>
+
     </div>
+   
   </main>
 
   <script src="index.js"></script>
