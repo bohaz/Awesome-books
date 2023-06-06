@@ -34,11 +34,11 @@
 # 📖 [Awesome-books] <a name="about-project"></a>
 
 
-**[Awesome-books]** Is a personal portfolio made made from scratch using Html, Css and Flexbox.
+**[Awesome-books]** Is a personal project made from scratch using Html, Css and JavaScript. There are 2 objects in this project: Understand different ways to create objects in JavaScript and Create and access properties and methods of JavaScript objects.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-HTML5, CSS3, Flexbox, Git and Github
+HTML5, CSS3, JavaScript, Git and Github
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -70,7 +70,7 @@ HTML5, CSS3, Flexbox, Git and Github
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://bohaz.github.io/First-mobile-project/)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
