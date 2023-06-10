@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
-  <title>Awesome-books</title>
-</head>
-<body>
-  <main>
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Awesome-books</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-content">
+        <h2>Awesome books</h2>
+        <ul>
+          <li><a href="#" id="listLink">List</a></li>
+          <li><a href="#" id="addLink">Add new</a></li>
+          <li><a href="#" id="contactLink">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <h1 class="title">All awesome books</h1>
+    <main>
+      <section id="listSection">
+        <div class="container">
+          <h1 class="title">All awesome books</h1>
 
-      <div>
-        <ul id="bookList" class="book-list"></ul>
-      </div>
-  
-      <div class="form">
-        <h2>Add a new book</h2>
-        <input type="text" id="titleInput" placeholder="Title">
-        <input type="text" id="authorInput" placeholder="Author">
-        <button onclick="bookCollection.addBook()">Add</button>
-      </div>
+          <div>
+            <ul id="bookList" class="book-list"></ul>
+          </div>
+        </div>
+      </section>
 
-    </div>
-   
-  </main>
+      <section id="addSection">
+        <div class="container">
+          <form class="form">
+            <h2>Add a new book</h2>
+            <input type="text" id="titleInput" placeholder="Title" />
+            <input type="text" id="authorInput" placeholder="Author" />
+            <button id="addButton">Add</button>
+          </form>
+        </div>
+      </section>
 
-  <script src="index.js"></script>
+      <!---------------------------Contact section-------------------------------->
 
-</body>
+      <section class="contactSection" id="contactSection">
+        <div class="container">
+          <h2>Contact information</h2>
+
+          <p>
+            Do you any questions or you just want to say "Hello"?<br />You can
+            reach out us!
+          </p>
+
+          <ul>
+            <li>Our e-mail: mail@mail.com</li>
+            <li>Our phone number: 00*********</li>
+            <li>
+              Our address: Streetname #,City, Pakistan, Peru & Venezuela./li>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!---------------------------Footer section---------------------------------->
+
+    <footer>
+      <p>Copyright 2023</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>

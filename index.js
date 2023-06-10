@@ -12,6 +12,30 @@ class BookCollection {
     this.bookListElement = document.getElementById('bookList');
     this.titleInputElement = document.getElementById('titleInput');
     this.authorInputElement = document.getElementById('authorInput');
+    this.listLinkElement = document.getElementById('listLink');
+    this.addLinkElement = document.getElementById('addLink');
+    this.contactLinkElement = document.getElementById('contactLink');
+    this.listSectionElement = document.getElementById('listSection');
+    this.addSectionElement = document.getElementById('addSection');
+    this.contactSectionElement = document.getElementById('contactSection');
+
+    this.displayBooks();
+
+    this.listLinkElement.addEventListener('click', () => {
+      this.showSection('list');
+    });
+
+    this.addLinkElement.addEventListener('click', () => {
+      this.showSection('add');
+    });
+
+    this.contactLinkElement.addEventListener('click', () => {
+      this.showSection('contact');
+    });
+
+    document.getElementById('addButton').addEventListener('click', () => {
+      this.addBook();
+    });
   }
 
   displayBooks() {
@@ -56,6 +80,20 @@ class BookCollection {
     localStorage.setItem('books', JSON.stringify(this.books));
 
     this.displayBooks();
+  }
+
+  showSection(section) {
+    this.listSectionElement.style.display = 'none';
+    this.addSectionElement.style.display = 'none';
+    this.contactSectionElement.style.display = 'none';
+
+    if (section === 'list') {
+      this.listSectionElement.style.display = 'block';
+    } else if (section === 'add') {
+      this.addSectionElement.style.display = 'block';
+    } else if (section === 'contact') {
+      this.contactSectionElement.style.display = 'block';
+    }
   }
 }
 

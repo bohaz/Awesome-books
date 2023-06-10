@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,9 +10,12 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 80%;
+  margin: auto;
+  padding: 7% 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .title {
@@ -22,7 +26,6 @@ body {
 .form {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
   flex-direction: column;
   gap: 20px;
   align-items: center;
@@ -67,4 +70,60 @@ body {
   color: black;
   border: 2px solid black;
   cursor: pointer;
+}
+
+.nav-content {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.nav-content ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-content ul li {
+  margin-right: 10px;
+}
+
+.nav-content a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+a:hover {
+  color: blue;
+}
+
+footer {
+  background-color: gray;
+  padding: 2%;
+}
+
+.contact {
+  max-width: 600px;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li:not(:last-child)::after {
+  content: "|";
+  margin: 0 10px;
+  color: black;
+}
+
+.show-section {
+  display: block;
+}
+
+.contactSection h2 {
+  text-align: center;
 }
