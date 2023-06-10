@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 7% 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.form input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.form button {
+  margin-left: 23%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.book-item button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.nav-content {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.nav-content ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-content ul li {
+  margin-right: 10px;
+}
+
+.nav-content a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+a:hover {
+  color: blue;
+}
+
+footer {
+  background-color: gray;
+  padding: 2%;
+}
+
+.contact {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li:not(:last-child)::after {
+  content: "|";
+  margin: 0 10px;
+  color: black;
+}
+
+.show-section {
+  display: block;
+}
+
+.contactSection h2 {
+  text-align: center;
+}
